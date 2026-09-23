@@ -1,0 +1,1 @@
+document.querySelectorAll('form').forEach(form=>{form.addEventListener('submit',()=>{const btn=form.querySelector('button[type="submit"],button:not([type])');if(btn&&!btn.dataset.keep){btn.disabled=true;setTimeout(()=>btn.disabled=false,2500)}})});
